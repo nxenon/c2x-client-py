@@ -5,7 +5,7 @@
 [![Python Version](https://badgen.net/badge/Python/3.X/blue)](https://www.python.org/download/releases/3.0/)
 [![License](https://badgen.net/badge/License/GPLv2/purple)](https://github.com/nxenon/c2x-client-py/blob/master/LICENSE)
 
-C2x-Client-Py is client of [C2X](https://github.com/nxenon/c2x) (C2/Post Exploitation) project in Python language.
+C2X-Client-Py is client of [C2X](https://github.com/nxenon/c2x) (C2/Post Exploitation) project in Python language.
 
 Run
 ----
