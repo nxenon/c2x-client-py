@@ -1,4 +1,4 @@
-# C2X-Client-Go
+# C2X-Client-Py
 
 [![Tool Category](https://badgen.net/badge/Tool/C2%20Client/black)](https://github.com/nxenon/c2x-client-py)
 [![APP Version](https://badgen.net/badge/Version/Beta/red)](https://github.com/nxenon/c2x-client-py)
